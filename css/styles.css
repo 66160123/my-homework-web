@@ -1,0 +1,179 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+/* Layout and Flexbox */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+}
+/* Navigation Menu */
+nav {
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #00FF99;
+  transition: color 0.3s;
+}
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      text-align: left;
+      padding-left: 20px;
+  }
+
+  nav ul li {
+      padding: 15px 0;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  .menu-active {
+      display: block;
+  }
+}
+/* Effects and Animations */
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00FF99;
+}
+
+button:focus {
+  outline: none;
+}
+/* Effects and Animations */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00FF99;
+}
+
+button:focus {
+    outline: none;
+}
+/* Section and Card Styles */
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+  margin-top: auto; /* ทำให้ footer ดันตัวเองลงไปที่ด้านล่าง */
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ให้ body ครอบคลุมความสูงของหน้าจอ */
+}
+
+.container {
+  flex: 1; /* ใช้พื้นที่ที่เหลือเพื่อดัน footer ลงล่าง */
+}
+
+
+
