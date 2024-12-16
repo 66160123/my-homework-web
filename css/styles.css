@@ -154,5 +154,13 @@ section {
   font-size: 20px;
   margin-top: 15px;
 }
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+  margin-top: 20px;
+}
 
 
