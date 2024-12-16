@@ -87,5 +87,39 @@ nav ul li a:hover {
       display: block;
   }
 }
+/* Effects and Animations */
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00FF99;
+}
+
+button:focus {
+  outline: none;
+}
+/* Effects and Animations */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00FF99;
+}
+
+button:focus {
+    outline: none;
+}
 
 
